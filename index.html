@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>全国の地名と特徴</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<header>
+  <h1>日本の地理を知ろう</h1>
+</header>
+<body style="background: url(map-japan1.png) no-repeat right 40%">
+<div class="assessment">
+  <p>ボタンを押すと各県庁所在地にまつわる雑学が表示されます。<br>どこの都道府県が出るか、占い感覚で押してみましょう。
+    <br>下のクイズのヒントになっていたり、なっていなかったりします。</p>
+  <button id="randomButton">Let's click!</button><br>
+  <p id="comment" class="comment">〈ここに表示されます〉</p>
+  <script src="index.js"></script>
+</div>
+<br>
+<div class="quiz">
+  <h1>都道府県3択クイズ</h1>
+  <p>時事問題も数問入れており、全50問です。<br>選択肢をクリックで解答が出ます。次の問題へボタンで次の問題に進みます。</p>
+  <h2>問題</h2>
+  <p id="question"></p>
+  <h2>選択肢</h2>
+  <p id="choices3">選択肢</p>
+  <h2>答え</h2>
+  <p id="comments"><br></p>
+  <input type="button" id="nextButton" value="次の問題へ" onclick="nextQuestion()" disabled>
+  <p id="finished"></p>
+  <script src="quiz.js"></script>
+</div>
+<footer>
+  - 2021 By pala -
+</footer>
+</body>
+</html>
